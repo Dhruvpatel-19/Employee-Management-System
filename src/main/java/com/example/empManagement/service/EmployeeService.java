@@ -14,6 +14,9 @@ public class EmployeeService {
 
 
     public Employee addEmployee(Employee employee) {
+        if(employee.getFirstName().isEmpty() && employee.getEmailId().isEmpty()){
+            return null;
+        }
         return employeeRepository.save(employee);
     }
 
