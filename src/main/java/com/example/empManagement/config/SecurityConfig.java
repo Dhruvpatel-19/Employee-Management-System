@@ -18,12 +18,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
 
-    @Override
+   @Override
     protected void configure(HttpSecurity http) throws Exception {
         //Basic Authentication
         //Form Based Authentication
-        http
-                .csrf().disable()
+       http
+                .csrf().disable();
+        http.httpBasic().and()
                 .authorizeRequests()
                 //.antMatchers("/home", "/login" , "/register").permitAll()
                 //.antMatchers("/public/**").permitAll()
@@ -38,6 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //.httpBasic();
                 .formLogin();
     }
+
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
