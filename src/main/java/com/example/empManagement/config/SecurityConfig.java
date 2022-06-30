@@ -1,5 +1,5 @@
 package com.example.empManagement.config;
-
+/*
 import com.example.empManagement.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -54,3 +54,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder() ;
     }
 }
+*/

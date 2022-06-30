@@ -1,5 +1,5 @@
 package com.example.empManagement.service;
-
+/*
 import com.example.empManagement.entity.CustomUSerDetails;
 import com.example.empManagement.entity.Employee;
 import com.example.empManagement.repository.EmployeeRepository;
@@ -23,3 +23,4 @@ public class CustomUserDetailsService implements UserDetailsService {
         return new CustomUSerDetails(employee);
     }
 }
+*/

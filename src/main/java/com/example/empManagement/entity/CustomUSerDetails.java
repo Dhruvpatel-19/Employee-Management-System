@@ -1,5 +1,5 @@
 package com.example.empManagement.entity;
-
+/*
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -52,3 +52,4 @@ public class CustomUSerDetails implements UserDetails {
         return true;
     }
 }
+*/

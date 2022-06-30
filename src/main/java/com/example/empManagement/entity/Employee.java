@@ -1,10 +1,16 @@
 package com.example.empManagement.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Employee {
 
@@ -19,7 +25,7 @@ public class Employee {
 
     private String role;
 
-    public Employee() {
+   /* public Employee() {
     }
 
     public Employee(int id, String firstName, String lastName, String emailId, String password, String role) {
@@ -77,5 +83,5 @@ public class Employee {
 
     public void setRole(String role) {
         this.role = role;
-    }
+    }*/
 }

@@ -3,7 +3,7 @@ package com.example.empManagement.controller;
 import com.example.empManagement.entity.Employee;
 import com.example.empManagement.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,13 +15,13 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    //@Autowired
+    //private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @RequestMapping(value = "/addEmp" , method = RequestMethod.POST)
     public Employee addEmployee(@RequestBody Employee employee){
-        String encryptedPass = bCryptPasswordEncoder.encode(employee.getPassword());
-        employee.setPassword(encryptedPass);
+        //String encryptedPass = bCryptPasswordEncoder.encode(employee.getPassword());
+        //employee.setPassword(encryptedPass);
         return employeeService.addEmployee(employee);
     }
 
